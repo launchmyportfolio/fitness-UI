@@ -1,0 +1,50 @@
+.floating-contact {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.floating-contact a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* WhatsApp Style */
+.whatsapp-btn {
+  background: #25D366;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 25px #25D366;
+}
+
+/* Instagram Style */
+.instagram-btn {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
+
+.instagram-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 25px #d62976;
+}

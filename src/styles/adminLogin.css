@@ -1,0 +1,57 @@
+.admin-login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-login-card {
+  width: 350px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+}
+
+.admin-login-card h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: gold;
+}
+
+.admin-login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-login-card input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.admin-login-card input:focus {
+  border: 2px solid goldenrod;
+}
+
+.admin-login-card button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-login-card button:hover {
+  background-color: goldenrod;
+  transform: translateY(-2px);
+}
