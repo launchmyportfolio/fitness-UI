@@ -83,7 +83,7 @@ const Register = () => {
       const bmi = calculateBMI();
       const updatedForm = { ...form, bmi };
 
-      await axios.post("http://localhost:8081/api/clients", updatedForm);
+      await axios.post("${process.env.REACT_APP_API_URL}/api/clients", updatedForm);
 
       localStorage.removeItem("fitnessForm");
 

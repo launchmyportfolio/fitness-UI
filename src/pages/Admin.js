@@ -19,7 +19,7 @@ const AdminDashboard = ({ setIsAdminLoggedIn }) => {
   // Fetch clients
   useEffect(() => {
     axios
-      .get("http://localhost:8081/api/clients")
+      .get("${process.env.REACT_APP_API_URL}/api/clients")
       .then((res) => {
         setMembers(res.data);
         setLoading(false);

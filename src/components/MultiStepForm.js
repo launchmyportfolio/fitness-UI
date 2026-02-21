@@ -20,7 +20,7 @@ function MultiStepForm() {
 
     const finalData = { ...formData, bmi };
 
-    await fetch("http://localhost:8081/api/clients", {
+    await fetch("${process.env.REACT_APP_API_URL}/api/clients", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(finalData)
